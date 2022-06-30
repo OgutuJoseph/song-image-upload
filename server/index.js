@@ -4,12 +4,18 @@ const app = express();
 const connection = require('./db');
 const cors = require('cors');
 
-//database connection
+// routes imports
+const songRoutes = require('./routes/song');
+
+// database connection
 connection()
 
-//middlewares
+// middlewares
 app.use(express.json());
 app.use(cors());
+
+// routes exports
+app.use('/api/songs', songRoutes);
 
 const port = process.env.PORT || 8083;
 app.listen(port, () => console.log(`Listening on port ${port}`))

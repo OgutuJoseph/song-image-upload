@@ -1,0 +1,5 @@
+Create the Firebase Strorage
+Create the Database as named in .env
+Create the table 'songs'
+
+- When uploading; if uploading both audio and image, ensure the upload progress completes (to 100%), before submitting.

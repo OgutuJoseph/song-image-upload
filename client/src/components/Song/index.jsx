@@ -1,4 +1,4 @@
-import styles from './styeles.module.css';
+import styles from './styles.module.css';
 
 const Song = ({ song }) => {
     return (
